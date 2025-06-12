@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OfferCourseController">
+   <children>
+      <Text layoutX="358.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Management System">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="164.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="153.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructor ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="162.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Date">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="167.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="courseIdTextField" layoutX="278.0" layoutY="109.0" prefHeight="25.0" prefWidth="135.0" promptText="Enter Course ID" />
+      <TextField fx:id="instructorIdTextField" layoutX="278.0" layoutY="163.0" prefHeight="25.0" prefWidth="135.0" promptText="Enter Instructor ID" />
+      <TextField fx:id="durationTextField" layoutX="278.0" layoutY="268.0" prefHeight="25.0" prefWidth="135.0" promptText="Enter Duration" />
+      <Button layoutX="244.0" layoutY="324.0" mnemonicParsing="false" onAction="#handleOfferCourseButtonAction" text="Add Offer" />
+      <Button layoutX="478.0" layoutY="188.0" mnemonicParsing="false" onAction="#handleEraseButtonAction" text="Erase" />
+      <Label fx:id="statusLabel" layoutX="14.0" layoutY="365.0" prefHeight="25.0" prefWidth="206.0" text="Status - " />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackButtonAction" text="Back" />
+      <Text layoutX="233.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offer Course">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="300.0" layoutY="65.0" startX="-100.0" />
+      <TextField fx:id="startDatePicker" layoutX="278.0" layoutY="214.0" prefHeight="25.0" prefWidth="135.0" promptText="Enter Date" />
+   </children>
+</AnchorPane>

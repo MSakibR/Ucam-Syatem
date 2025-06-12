@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Text layoutX="240.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, User" wrappingWidth="120.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Course Management System">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Line endX="175.0" layoutX="262.0" layoutY="147.0" startX="-100.0" />
+      <TextField fx:id="idTextField" layoutX="218.0" layoutY="181.0" onAction="#handleLoginButtonAction" prefHeight="39.0" prefWidth="209.0" promptText="Enter Your ID" />
+      <Text layoutX="182.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button layoutX="270.0" layoutY="241.0" mnemonicParsing="false" onAction="#handleLoginButtonAction" prefHeight="39.0" prefWidth="105.0" text="Log In" />
+      <Button layoutX="490.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleSignupButtonAction" prefHeight="32.0" prefWidth="96.0" text="Sign Up" />
+   </children>
+</AnchorPane>
